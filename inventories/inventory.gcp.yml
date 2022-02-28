@@ -15,4 +15,4 @@ hostnames:
   - name
 compose:
   # set the ansible_host variable to connect with the private IP address without changing the hostname
-  ansible_host: name
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP
